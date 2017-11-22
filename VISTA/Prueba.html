@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Prueba de orientación profesional</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.css" rel="stylesheet">
+
+    <!-- Estilos del sitio web -->
+    <link href="css/site.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="brand pull-left" href="#">
+                <img src="http://www.politecnicojic.edu.co/images/logo/logo.png" alt="" class="img-responsive logo logo-poli"> </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Programas.html">Programas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Prueba.html">Prueba</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br><br><br> 
+     <section class="container py-4">
+        <div class="row">
+            <div class="col-md-12">
+                <center><h2>Prueba de Orientación Profesional</h2></center>
+                <ul id="tabsJustified" class="nav nav-tabs">
+                    <li class="nav-item"><a  data-target="#paso1" class="nav-link small text-uppercase active"><b>PASO 1 - REGISTRO</b></a></li>
+                    <li class="nav-item"><a data-target="#paso2" href="#paso2" class="nav-link small text-uppercase "><b>PASO 2 - PRUEBA</b></a></li>
+                    <li class="nav-item"><a  data-target="#paso3" href="#paso3" class="nav-link small text-uppercase"><b>PASO 3 - RESULTADOS</b></a></li>
+                    <!--data-toggle="tab" ..... para ir a  los link ...  href="" -->
+                </ul>
+                <br>
+                <div id="tabsJustifiedContent" class="tab-content">
+                    <div id="paso1" class="tab-pane fade active show">
+                        <form id="Form1" class="form-horizontal">
+                        <fieldset>
+
+                        <!-- Form Name - si la respuesta es no permitir pasar al siguiente paso -->
+                        <legend><b><center>Registrar Información</center></b></legend>
+
+                            <div class="form-group">
+                              <label class="col-md-12 control-label" for="Training"><center>¿Desea suminitrar sus datos al portal web para enviarle información en el futuro?</label>
+                              <div class="col-md-4"> 
+                                <label class="radio-inline" for="Training-0">
+                                  <input type="radio" name="Training" id="Training-0" value="si" checked="">
+                                  Si
+                                </label> 
+                                <label class="radio-inline" for="Training-1">
+                                  <input type="radio" name="Training" id="Training-1" value="no">
+                                  No
+                                </label>
+                              </div>
+                            </div></center>
+                            <center>
+
+                            <!-- Text input-->
+                            <div class="form-group">
+                              <!--<label class="col-md-2 control-label" for="Nombre">Nombre</label>-->  
+                              <div class="col-md-4">
+                              <input id="Nombre" name="Nombre" type="text" placeholder="Nombre" class="form-control input-md" required="">
+                                
+                              </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="form-group">
+                              <!--<label class="col-md-2 control-label" for="Apellido">Apellido</label>-->  
+                                  <div class="col-md-4">
+                                  <input id="Apellido" name="Apellido" type="text" placeholder="Apellido" class="form-control input-md" required="">
+                                    
+                                  </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="form-group">
+                              <!--<label class="col-md-2 control-label" for="Correo">Correo</label>-->  
+                                  <div class="col-md-4">
+                                  <input id="Correo" name="Correo" type="email" placeholder="Correo" class="form-control input-md" required="">
+                                    
+                                  </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="submit1"></label>
+                                <div class="col-md-4">
+                                <button id="submit1" name="submit1" class="btn btn-primary">SIGUIENTE</button>
+                              </div>
+                            </div></center>
+                        </fieldset>
+                      </form>                   
+                  </div>
+                        
+
+                    <div id="paso2" class="tab-pane fade">
+                        <legend><b><center>Realizar Prueba</center></b></legend>
+
+                            <div class="form-group">
+                              <label class="col-md-12 control-label" for="Training"><b>1.</b>¿Frase favorita?</label>
+                              <div class="col-md-4"> 
+                                <label class="radio-inline" for="Training-0">
+                                  <input type="radio" name="Training1" id="Training1-A" value="A">
+                                  A. hola
+                                </label><br> 
+                                <label class="radio-inline" for="Training-1">
+                                  <input type="radio" name="Training1" id="Training1-B" value="B">
+                                  B. Chao
+                                </label><br>
+                                <label class="radio-inline" for="Training-2">
+                                  <input type="radio" name="Training1" id="Training1-C" value="C">
+                                  C. Adios
+                                </label><br>
+                                <label class="radio-inline" for="Training-3">
+                                  <input type="radio" name="Training1" id="Training1-D" value="D">
+                                  D. Que mas
+                                </label><br>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="col-md-12 control-label" for="Training"><b>2.</b>¿Mascota favorita?</label>
+                              <div class="col-md-4"> 
+                                <label class="radio-inline" for="Training-0">
+                                  <input type="radio" name="Training2" id="Training2-A" value="A">
+                                  A. Perro 
+                                </label><br> 
+                                <label class="radio-inline" for="Training-1">
+                                  <input type="radio" name="Training2" id="Training2-B" value="B">
+                                  B. Gato
+                                </label><br>
+                                <label class="radio-inline" for="Training-2">
+                                  <input type="radio" name="Training2" id="Training2-C" value="C">
+                                  C. Loro
+                                </label><br>
+                                <label class="radio-inline" for="Training-3">
+                                  <input type="radio" name="Training2" id="Training2-D" value="D">
+                                  D. Raton
+                                </label><br>
+                              </div>
+                            </div>
+                            <div class="form-group"><center>
+                                <label class="col-md-4 control-label" for="submit"></label>
+                                <div class="col-md-4">
+                                <button id="submit2" name="submit2" class="btn btn-primary">SIGUIENTE</button>
+                              </div></center>
+                            </div>
+                        
+                    </div>
+                    <div id="paso3" class="tab-pane fade">
+                         <legend><b><center>Resultados Obtenidos</center></b></legend>
+
+                         <div class="form-group"><center>
+                                <label class="col-md-4 control-label" for="submit"></label>
+                                <div class="col-md-4">
+                                    <button id="submit3" name="submit3" class="btn btn-primary">SALIR</button>
+                              </div></center>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+    <script type="text/javascript">
+        //Funcion para obtener el valor del radiobutton y cambiar al tab siguiente 
+         $(document).ready(function() {
+              var sw='';
+              var sw2='';
+              var pregunta1= '';
+              var pregunta2= '';
+              var form1 = $("#Form1");
+              form1.validate({
+                  rules: {
+                      Nombre: "required",
+                      Apellido: "required",
+                      Correo: "required email"
+                  },
+                  messages: {
+                      Nombre: "Ingrese su nombre",
+                      Apellido: "Ingrese su apellido",
+                      Correo: {
+                        required: "Ingrese su correo electronico",
+                        email: "Por favor ingrese un correo electronico válido"
+                        }
+                    }
+                  });
+
+              $('#submit1').click(function(){ 
+                  if (form1.valid()) {
+                    $('.nav-tabs a[href="#paso2"]').tab('show');
+                    return false;
+                  }
+              });
+              $('input[name=Training]').change(function(){
+                  checkedSi = $( 'input[name=Training]:checked' ).val();
+                    if(checkedSi === 'no')
+                    {
+                        $('.nav-tabs a[href="#paso2"]').tab('show');
+                        return false;
+                                            
+                    }
+                    
+               });
+                  
+               $('#submit2').click(function(){
+                  console.log("sw : "+sw);
+                  console.log("sw2 :"+sw2);
+                    if(sw=='true' && sw2=='true'){
+                         $('.nav-tabs a[href="#paso3"]').tab('show');
+                         return false;
+                     }else{
+                        alert('Todas las preguntas deben ser respondidas');
+                     }
+               });      
+               $('input[name=Training1]').change(function(){
+                     pregunta1 = $( 'input[name=Training1]:checked' ).val();
+                     if(pregunta1 !== '')
+                      {
+                        sw= 'true';                       
+                      }               
+                }); 
+                $('input[name=Training2]').change(function(){
+                      pregunta2 = $( 'input[name=Training2]:checked' ).val();   
+                      if(pregunta2 !== '')
+                      {
+                        sw2= 'true';                             
+                      }   
+                });
+               $('#submit3').click(function(){
+                    location.href ="index.html";
+                    return false;                      
+                });  
+           });
+    </script>
+
+</body>
+
+</html>
