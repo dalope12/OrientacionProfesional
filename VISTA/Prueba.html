@@ -556,8 +556,8 @@
                         
                     </div>
                     <div id="paso3" class="tab-pane fade">
-                         <legend><b><center>Resultados Obtenidos</center></b></legend>
-
+                         <legend><b><center>Resultados Obtenidos</center></b></legend><br>
+                         <div id="resultados"></div>
                          <div class="form-group"><center>
                                 <label class="col-md-4 control-label" for="submit"></label>
                                 <div class="col-md-4">
@@ -621,6 +621,7 @@
                $('#submit2').click(function(){
                   console.log("sw : "+sw);
                     if(sw >= 32){
+                         MandarDatos();
                          $('.nav-tabs a[href="#paso3"]').tab('show');
                          return false;
                      }else{
@@ -859,24 +860,22 @@
                     var parametros = {
                        "Nombre" : $('input[name=Nombre]').val(),
                        "Apellido" : $('input[name=Apellido]').val(),
-                       "Correo" : $('input[name=Correo]').val()
+                       "Correo" : $('input[name=Correo]').val(),       
                     };
-                      $.ajax({
-                        data:  parametros, //datos que se envian a traves de ajax
-                        url:   '.CONTROLADOR/aspirante.php', //archivo que recibe la peticion
-                        type:  'post', //método de envio
+                    var jsonString = JSON.stringify(Respuestas);
+                    var jsonString2 = JSON.stringify(parametros);
+                    $.ajax({
+
+                        data:  {data : jsonString,parametros:jsonString2}, //datos que se envian a traves de ajax
+                        url:   '../CONTROLADOR/aspirante.php', //archivo que recibe la peticion
+                        type:  'POST', //método de envio
+                        success:  function (response) { //una vez  que el archivo recibe el request lo procesa y lo devuelve
+                              $('#resultados').html(response);
+                         }
+                      
                      });
 
                }
-                 
-                /*beforeSend: function () {
-                        $("#resultado").html("Procesando, espere por favor...");
-                },
-                success:  function (response) { //una vez que el archivo recibe el request lo procesa y lo devuelve
-                        $("#resultado").html(response);
-                }*/
-
-                 
            });
     </script>
 
